@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giriş Yap</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="merhabaa.css">
+</head>
+<body style="background-color: black;">
+<h1 id="dig"></h1>
+<h1 id="flower">Name</h1>
+<input type="text" id="clicked" style="background-color: black; color: red">()
+<br><br><br>
+<button id="demo">Giriş</button>
+<br>
+<h2 id="cop" style="color: white;"></h2>
+<br>
+<button id="noonve" style="color: red">0</button>
+<a id="clera" href="https://www.roblox.com/games/6001100655/Pet-Wars-Bad-Version-Beta-1-1-1?refPageId=9ab81b1a-8974-4c1b-a6c7-919964ce8014"></a>
+<br>
+<button id="Back" style="background-color: lime; color: darkblue;">Back</button>
+<br><br><br>
+<img src="renklşi.png" border="0"> 
+<h2 id="divi">Golden-Anomus</h2>
+<p id="clearall">catch Pets And Fight Block and get 5$</p>
+<br>
+<p id="clearalma">Updates:</p>
+<br>
+<p id="nomo"> Golden Anonmus? Cathc it!</p>
+<script>
+document.getElementById("Back").onclick = function() {wefunc()
+
+}
+document.getElementById("demo").onclick = function() {myFunction()
+	
+};
+
+function myFunction() {
+	if (document.getElementById("clicked").value != 0) 
+	{
+      alert("HI" + " " + document.getElementById("clicked").value);
+      document.getElementById("cop").innerHTML = "";
+      document.getElementById("Back").style.visibility = "visible";
+      document.getElementById("noonve").style.visibility = "hidden";
+      document.getElementById("clera").innerHTML = "Go Game!";
+      document.getElementById("clicked").style.visibility = "hidden";
+      document.getElementById("demo").style.visibility = "hidden";
+      document.getElementById("flower").style.visibility = "hidden";
+      }
+    if (document.getElementById("clicked").value == 0) 
+    {
+
+    	document.getElementById("cop").innerHTML = "Null Name, Please Add Name!"
+
+    	var sonuc = document.getElementById("noonve")
+    	sonuc.value =  Number(sonuc.value)+1;
+    	sonuc.innerHTML = sonuc.value
+    	if (sonuc.innerHTML == 3)
+    	{
+         document.getElementById("clera").remove()
+	document.getElementById("Back").remove()
+	document.getElementById("clicked").remove()
+	document.getElementById("demo").remove()
+	document.getElementById("flower").remove()
+	document.getElementById("noonve").remove()
+	document.getElementById("dig").innerHTML = "3/3 null Name, Please Try Open window!" 
+
+    	} 
+    } 
+}
+function wefunc() {
+
+	document.getElementById("clera").innerHTML = "";
+	document.getElementById("Back").style.visibility = "hidden";
+	document.getElementById("clicked").style.visibility = "visible";
+	document.getElementById("demo").style.visibility = "visible";
+	document.getElementById("flower").style.visibility = "visible"
+	document.getElementById("noonve").style.visibility = "visible"
+	
+
+	;
+}
+</script>
+
+</body>
+</html>
+
